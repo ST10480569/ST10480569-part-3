@@ -1,0 +1,186 @@
+/* ============================= */
+/* 🌸 B’s Therapy Luxury CSS 🌸 */
+/* ============================= */
+
+
+:root {
+  --pink:        #f7c6d9;
+  --pink-soft:   #fde4ec;
+  --pink-dark:   #e89ab5;
+  --nude:        #fdf6f0;
+  --cream:       #fffaf7;
+  --text-dark:   #3a2e2e;
+  --text-light:  #7a6a6a;
+  --white:       #ffffff;
+
+  --radius:     10px;
+  --shadow:     0 6px 20px rgba(0,0,0,0.08);
+  --transition: 0.25s ease;
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+/* BODY */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--cream);
+  color: var(--text-dark);
+  line-height: 1.7;
+}
+
+/* NAVBAR */
+nav {
+  background-color: var(--white);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  padding: 15px 30px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 20px;
+  color: var(--pink-dark);
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text-light);
+  padding: 6px 12px;
+  border-radius: var(--radius);
+  transition: var(--transition);
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--pink-dark);
+  background: var(--pink-soft);
+}
+
+/* BUTTONS */
+.button {
+  background: var(--pink);
+  color: var(--text-dark);
+  border: none;
+  border-radius: 30px;
+  padding: 10px 24px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.button:hover {
+  background: var(--pink-dark);
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* ABOUT SECTION */
+.about-section {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, var(--pink-soft), var(--cream));
+}
+
+.about-section h1 {
+  color: var(--pink-dark);
+  margin-bottom: 10px;
+}
+
+.about-description {
+  max-width: 700px;
+  margin: 10px auto;
+  color: var(--text-light);
+}
+
+/* CARDS */
+.row {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.column {
+  width: 300px;
+}
+
+.card {
+  background: var(--white);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  text-align: center;
+  transition: var(--transition);
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.card img {
+  width: 100%;
+}
+
+.container {
+  padding: 20px;
+}
+
+.title {
+  color: var(--pink-dark);
+  margin-bottom: 10px;
+}
+
+/* CONTACT FORM */
+.contact-form-container {
+  max-width: 500px;
+  margin: 40px auto;
+  background: var(--white);
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+}
+
+.contact-form-container input,
+.contact-form-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: var(--radius);
+  border: 1px solid #ddd;
+}
+
+.contact-form-container input:focus,
+.contact-form-container textarea:focus {
+  outline: none;
+  border-color: var(--pink);
+  box-shadow: 0 0 0 3px rgba(247,198,217,0.3);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 30px;
+  background: var(--pink-soft);
+  margin-top: 40px;
+}
+
+footer h2 {
+  color: var(--pink-dark);
+}
