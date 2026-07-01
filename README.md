@@ -1,6 +1,6 @@
 # ST10480569-part-3
 Portfolio of evidence
-📄 PROCESS DOCUMENT
+PROCESS DOCUMENT
 Project: B’s Therapy Website
 Business: B’s Therapy
 Developer: Bongekile Nyawo
